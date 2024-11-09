@@ -7,16 +7,18 @@
         --fg1: #fff;
         --fg2: #fff8;
         --fg3: #fff6;
+        --s-blue: #9CDCFE;
     }
 }
 @media (prefers-color-scheme: light) {
     html {
         --bg1: #fff;
-        --bg2: #ccc;
-        --bg3: #aaa;
+        --bg2: #f1f1f1;
+        --bg3: #d6d6d6;
         --fg1: #000;
         --fg2: #222;
         --fg3: #333;
+        --s-blue: #036498;
     }
 }
 
@@ -73,6 +75,16 @@ body {
     }
 }
 
+.stdrev-select {
+    height: 24px;
+
+    & > div {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
 /* Menus */
 .menu > ul, .t-navbar-menu > div {
     padding: 5px 10px !important;
@@ -104,7 +116,7 @@ table, td {
     background: var(--bg1) !important;
     color: var(--fg1);
 }
-#cpp-head-second-base, .mainpagetable tr.row td, th, div.mw-geshi, .coliru-output *{
+#cpp-head-second-base, .mainpagetable tr.row td, th, div.mw-geshi, .coliru-output * {
     background: var(--bg2) !important;
     border-color: var(--fg2) !important;
     color: var(--fg1) !important;
@@ -113,6 +125,9 @@ table, td {
 @media (prefers-color-scheme: dark) {
     a {
         color: #88B4F8;
+    }
+    a:visited {
+        color: #3b73c9;
     }
     [class^=sy] {
         color: #C7C7C7 !important;
@@ -159,14 +174,14 @@ table, td {
 }
 .t-mark-rev {
     background: var(--bg2);
-    color: #9CDCFE;
+    color: var(--s-blue);
     border-radius: 10px;
     padding: 2px 5px;
 }
 
 .t-rev-inl {
     background: var(--bg2);
-    color: #9CDCFE;
+    color: var(--s-blue);
     border-radius: 10px;
     padding: 0px 5px;
     border: none;
@@ -200,7 +215,7 @@ body, html {
     min-width: 0px;
     overflow-x: hidden;
 }
-table,.t-dsc, .t-example {
+table, .t-dsc, .t-example {
     display: block;
     overflow-x: auto;
     max-width: calc(100vw - 20px);
@@ -222,10 +237,10 @@ div#cpp-head-first, div#cpp-head-second, div#content, div#footer {
 }
 ::-webkit-scrollbar-track {
     border-radius: 3px;
-    background: rgba(0,0,0,0.06);
+    background: rgba(0, 0, 0, 0.06);
 }
 /* 滚动条滑块 */
 ::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background: rgba(0,0,0,0.12);
+    background: rgba(0, 0, 0, 0.12);
 }
