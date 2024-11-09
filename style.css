@@ -192,8 +192,9 @@ table, td {
     position: sticky;
     background: var(--bg1);
     width: 100%;
-    padding: 3px 10px;
+    padding: 10px 0;
     margin: 5px 0;
+    margin-left: -15px;
     border-radius: 5px;
     .t-navbar-sep {
         background: transparent;
