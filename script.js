@@ -5,5 +5,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
   header.onclick = ()=>document.location.href = '/';
 
   // Fix Navbar Position
-  document.querySelector('#content')?.prepend(document.querySelector('.t-navbar'))
+  document.querySelector('#content')?.prepend(document.querySelector('.t-navbar') ?? '')
 })
