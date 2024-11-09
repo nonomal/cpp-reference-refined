@@ -37,5 +37,5 @@ Make cppreference.com great again.
 
 #### Generate index from local archive
 ```bat
-forfiles /s /m * /c "cmd /c echo @relpath,"
+forfiles /s /m *.html /c "cmd /c echo @relpath," > index.json
 ```
