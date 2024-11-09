@@ -22,7 +22,7 @@ Make cppreference.com great again.
       <img height=140 src=https://github.com/user-attachments/assets/b3d30bc7-54c2-406d-a9f0-d4557466a695 />
     </td>
     <td>
-      <img height=140 src=https://github.com/user-attachments/assets/7624c5f4-36c4-46e9-b330-3a91c2f2f9f7 />
+      <img height=60 src=https://github.com/user-attachments/assets/7624c5f4-36c4-46e9-b330-3a91c2f2f9f7 />
     </td>
   </tr>
   <tr>
