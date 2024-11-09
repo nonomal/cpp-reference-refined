@@ -221,7 +221,7 @@ body, html {
     overflow-x: hidden;
 }
 table, .t-dsc, .t-example {
-    display: block;
+    display: inline-block;
     overflow-x: auto;
     max-width: calc(100vw - 20px);
 }
