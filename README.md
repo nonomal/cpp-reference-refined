@@ -31,3 +31,11 @@ Make cppreference.com great again.
 </table>
 
 </div>
+
+
+### Misc
+
+#### Generate index from local archive
+```bat
+forfiles /s /m * /c "cmd /c echo @relpath,"
+```
