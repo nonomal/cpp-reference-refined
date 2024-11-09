@@ -100,8 +100,8 @@ body {
 
 /* Dark theme */
 /* | - Suggest Color */
-div#content, h1, h2, h3, h4, h5, h6, pre {
-    color: var(--fg1);
+div#content, h1, h2, h3, h4, h5, h6, pre, td {
+    color: var(--fg1) !important;
 }
 /* | - Force Color */
 #footer-info-lastmod,
