@@ -18,11 +18,15 @@ Make cppreference.com great again.
     <td>
       <img width=150 src=https://github.com/user-attachments/assets/48c78e07-9f26-4fe3-b1fc-2fa07693b2d8 />
     </td>
+    <td>
+      <img height=140 src=https://github.com/user-attachments/assets/b3d30bc7-54c2-406d-a9f0-d4557466a695 />
+    </td>
   </tr>
   <tr>
     <td>Dark Mode</td>
     <td>Mobile Adaption</td>
     <td>Soft Syntax Highlight</td>
+    <td>Auto Language</td>
   </tr>
 </table>
 
