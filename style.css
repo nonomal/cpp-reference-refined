@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@media (prefers-color-scheme: dark) {
+    html {
+        --bg1: #1B1B1B;
+        --bg2: #313131;
+        --bg3: #343434;
+        --fg1: #fff;
+        --fg2: #fff8;
+        --fg3: #fff6;
+    }
+}
+@media (prefers-color-scheme: light) {
+    html {
+        --bg1: #fff;
+        --bg2: #ccc;
+        --bg3: #aaa;
+        --fg1: #000;
+        --fg2: #222;
+        --fg3: #333;
+    }
+}
+
+/* Prefer Noto Sans  */
+body {
+    font-family: Noto Sans, "Noto Sans SC";
+}
+
+/* Hide personal button, search button  */
+#cpp-head-personal, #cpp-head-search {
+    display: none;
+}
+
+/* CppRefPlus header/footer */
+#cpp-head-first h5 {
+    a {
+        display: none;
+    }
+    &::before {
+        content: "C++ Reference Refined";
+        color: var(--fg1);
+    }
+
+    &::after {
+        content: "cppref.microblock.cc";
+        color: var(--fg2);
+        font-weight: 500;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+}
+
+#cpp-head-first-base {
+    padding: 5px;
+}
+
+#cpp-head-second-base, #cpp-head-second, div.vectorTabs, .vectorMenu {
+    height: 24px !important;
+    a, span {
+        padding: 3px;
+    }
+
+    * {
+        background: var(--bg2);
+        color: var(--fg1);
+    }
+
+    &.vectorTabs {
+        overflow: hidden;
+    }
+
+    #cpp-head-tools-left {
+        line-height: 21px;
+    }
+}
+
+/* Menus */
+.menu > ul, .t-navbar-menu > div {
+    padding: 5px 10px !important;
+    border-color: transparent !important;
+    border-radius: 10px !important;
+    background: var(--bg2) !important;
+    border: 1px solid var(--fg3) !important;
+}
+
+/* Dark theme */
+/* | - Suggest Color */
+div#content, h1, h2, h3, h4, h5, h6, pre {
+    color: var(--fg1);
+}
+/* | - Force Color */
+#footer-info-lastmod,
+#cpp-languages > div:nth-child(1) {
+    color: var(--fg1) !important;
+    * {
+        color: var(--fg1) !important;
+    }
+}
+body, #cpp-content-base, #cpp-head-first-base, #cpp-footer-base {
+    background: var(--bg1) !important;
+    border-color: transparent !important;
+}
+table, td {
+    border-color: var(--bg3) !important;
+    background: var(--bg1) !important;
+    color: var(--fg1);
+}
+#cpp-head-second-base, .mainpagetable tr.row td, th, div.mw-geshi, .coliru-output *{
+    background: var(--bg2) !important;
+    border-color: var(--fg2) !important;
+    color: var(--fg1) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: #88B4F8;
+    }
+    [class^=sy] {
+        color: #C7C7C7 !important;
+    }
+    [class^=kw] {
+        color: #CCCCCC !important;
+    }
+    .kw1, .kw4 {
+        color: #569CD6 !important;
+    }
+    .me2 {
+        color: #9CDCFE !important;
+    }
+    .br0 {
+        color: #F9D201 !important;
+    }
+    .nu0 {
+        color: #B5CEA8 !important;
+    }
+    .br0 {
+        color: #F9D201 !important;
+    }
+    .br0 {
+        color: #F9D201 !important;
+    }
+    .br0 {
+        color: #F9D201 !important;
+    }
+    .t-mark {
+        color: #91DCA2;
+    }
+}
+
+
+/* Beautify */
+/* Beautify - make (since c++20) badge */
+.t-rev-begin {
+    background: var(--bg2);
+    border-radius: 10px;
+    overflow: hidden;
+    & td {
+        padding: 5px 10px !important;
+    }
+}
+.t-mark-rev {
+    background: var(--bg2);
+    color: #9CDCFE;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+.t-rev-inl {
+    background: var(--bg2);
+    color: #9CDCFE;
+    border-radius: 10px;
+    padding: 0px 5px;
+    border: none;
+    margin: 0 3px;
+}
+/* Beautify - navbar */
+.t-navbar {
+    position: sticky;
+    background: var(--bg1);
+    width: 100%;
+    padding: 3px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    .t-navbar-sep {
+        background: transparent;
+        border: none;
+    }
+    .t-navbar-sep:not(:first-child):not(:last-child)::before {
+        content: ">";
+        width: 14px;
+    }
+
+    .t-navbar-head {
+        border: none;
+    }
+}
+
+
+/* 响应式  */
+body, html {
+    min-width: 0px;
+    overflow-x: hidden;
+}
+table,.t-dsc, .t-example {
+    display: block;
+    overflow-x: auto;
+    max-width: calc(100vw - 20px);
+}
+
+.pre, div.mw-geshi {
+    width: unset;
+}
+
+div#cpp-head-first, div#cpp-head-second, div#content, div#footer {
+    width: unset;
+    max-width: 800px;
+}
+
+/* 滚动条  */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.06);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba(0,0,0,0.12);
+}
