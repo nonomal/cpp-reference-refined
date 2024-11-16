@@ -37,7 +37,7 @@ Make cppreference.com great again.
 </div>
 
 ### Shortcuts
-You can use links like [`cppref.microblock.cc/function`](cppref.microblock.cc/function) to jump to corresponding page directly.
+You can use links like [`cppref.microblock.cc/function`](//cppref.microblock.cc/function) to jump to corresponding page directly.
 
 The matching logic follows three steps:
 
@@ -50,7 +50,7 @@ The matching logic follows three steps:
     * No jumps, doesn't have to match to the end: e.g., `someabc` matches `some/abc/function.html`
     * Allows jumps, doesn't have to match to the end: e.g., `someabc` might match `some/xxxx/abc/yyyy.html`
 
-您可以使用类似 [`cppref.microblock.cc/function`](cppref.microblock.cc/function) 的链接直接跳转到相应页面。
+您可以使用类似 [`cppref.microblock.cc/function`](//cppref.microblock.cc/function) 的链接直接跳转到相应页面。
 
 匹配逻辑遵循三个步骤：
 
